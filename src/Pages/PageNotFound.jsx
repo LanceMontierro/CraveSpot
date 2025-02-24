@@ -26,8 +26,8 @@ const PageNotFound = () => {
         Return to Safety
       </Link>
 
-      <div className="absolute top-10 left-10 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full blur-lg opacity-30 animate-pulse"></div>
-      <div className="absolute bottom-16 right-16 w-16 h-16 bg-gradient-to-br from-red-500 to-yellow-400 rounded-full blur-lg opacity-30 animate-pulse"></div>
+      <div className="absolute top-10 left-10 w-12 h-12 bg-linear-to-br from-blue-500 to-purple-600 rounded-full blur-lg opacity-30 animate-pulse"></div>
+      <div className="absolute bottom-16 right-16 w-16 h-16 bg-linear-to-br from-red-500 to-yellow-400 rounded-full blur-lg opacity-30 animate-pulse"></div>
     </div>
   );
 };

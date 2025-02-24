@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full fixed top-0 left-0 right-0 z-[100] px-[25px] bg-white shadow-md">
+      <header className="w-full fixed top-0 left-0 right-0 z-100 px-[25px] bg-white shadow-md">
         <nav className="flexBetween py-4 max-w-[1440px] mx-auto w-full md:px-[10px] px-0 relative">
           <div className="md:hidden block">
             <IconButton aria-label="account" onClick={toggleUserAcc}>
@@ -88,7 +88,7 @@ const Header = () => {
         </nav>
         {userAcc && (
           <div
-            className={`bg-bgWhite z-[1000]  max-w-[250px] absolute rounded-md mt-2   ${
+            className={`bg-bgWhite z-1000  max-w-[250px] absolute rounded-md mt-2   ${
               userAcc ? "md:right-28 top-14" : "md:right-[100%]"
             } `}
           >

@@ -87,12 +87,12 @@ const FilterFood = () => {
       {/* Small screen filter */}
       <div className="max-[992px]:block hidden w-full px-[25px] relative ">
         <div className="flex items-center justify-between gap-4 ">
-          <div className="flex items-center  bg-white border border-gray-300 rounded-xl p-3 shadow-sm w-[80%]">
+          <div className="flex items-center  bg-white border border-gray-300 rounded-xl p-3 shadow-xs w-[80%]">
             <SearchOutlinedIcon className="text-gray-400 mr-2" />
             <input
               type="text"
               placeholder="Search Foods"
-              className="w-full text-textMd outline-none"
+              className="w-full text-textMd outline-hidden"
               value={searchItem}
               onChange={(e) => setSearchItem(e.target.value)}
             />
@@ -107,7 +107,7 @@ const FilterFood = () => {
           </button>
         </div>
         {mobileFilter && (
-          <div className="fixed inset-0 z-[1000] bg-black bg-opacity-50 flexCenter">
+          <div className="fixed inset-0 z-1000 bg-black bg-opacity-50 flexCenter">
             {/* Modal Container */}
             <div className="bg-white pt-6 px-6 pb-8 rounded-xl w-[90%] max-w-[624px] shadow-lg relative">
               <header className="flexBetween mb-6">

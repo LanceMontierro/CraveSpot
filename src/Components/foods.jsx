@@ -72,13 +72,13 @@ const Foods = () => {
   };
 
   return (
-    <div className="mt-6 max-w-screen-xl mx-auto pr-[25px] max-[992px]:px-[25px]">
-      <div className="flex items-center mb-6  bg-white border border-gray-300 rounded-xl p-3 shadow-sm w-full max-[992px]:hidden ">
+    <div className="mt-6 max-w-(--breakpoint-xl) mx-auto pr-[25px] max-[992px]:px-[25px]">
+      <div className="flex items-center mb-6  bg-white border border-gray-300 rounded-xl p-3 shadow-xs w-full max-[992px]:hidden ">
         <SearchOutlinedIcon className="text-gray-400 mr-2" />
         <input
           type="text"
           placeholder="Search Foods"
-          className="w-full text-textMd outline-none"
+          className="w-full text-textMd outline-hidden"
           onChange={(e) => setSearchItem(e.target.value)}
           value={searchItem}
         />
@@ -138,7 +138,7 @@ const Foods = () => {
               </div>
 
               <div
-                className="absolute right-0 top-0 cursor-pointer rounded-sm bg-white p-1 shadow-md"
+                className="absolute right-0 top-0 cursor-pointer rounded-xs bg-white p-1 shadow-md"
                 onClick={(e) => {
                   e.stopPropagation();
                   addToFavoriteDish(dish);

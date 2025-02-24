@@ -83,7 +83,7 @@ const Favorites = () => {
                   </button>
                 </div>
                 <button
-                  className="absolute right-0 top-0 cursor-pointer rounded-sm bg-white p-1 shadow-md"
+                  className="absolute right-0 top-0 cursor-pointer rounded-xs bg-white p-1 shadow-md"
                   onClick={(e) => {
                     e.stopPropagation();
                     addToFavoriteDish(dish);

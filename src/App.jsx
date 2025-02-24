@@ -55,7 +55,7 @@ function App() {
   return (
     <>
       {/* Header Section */}
-      <header className="w-full fixed top-0 left-0 right-0 z-[100] px-[25px] bg-white shadow-md">
+      <header className="w-full fixed top-0 left-0 right-0 z-100 px-[25px] bg-white shadow-md">
         <nav className="flexBetween py-4 max-w-[1440px] mx-auto w-full md:px-[10px] px-0 relative">
           <div className="block md:hidden">
             <IconButton aria-label="User account menu" onClick={togglePopUp}>
@@ -63,7 +63,7 @@ function App() {
             </IconButton>
           </div>
           {popUp && (
-            <div className="absolute z-[200] top-[60px] flexCenter h-screen w-full ">
+            <div className="absolute z-200 top-[60px] flexCenter h-screen w-full ">
               <SignIn />
             </div>
           )}
@@ -104,12 +104,12 @@ function App() {
             <p className="text-textMd mb-6">
               Hungry? We deliver your cravings to your doorstep.
             </p>
-            <div className="flex items-center bg-white border border-gray-300 rounded-md p-2 shadow-sm">
+            <div className="flex items-center bg-white border border-gray-300 rounded-md p-2 shadow-xs">
               <SearchOutlinedIcon className="text-gray-400 mr-2" />
               <input
                 type="text"
                 placeholder="Enter your location..."
-                className="w-[80%] text-textMd outline-none"
+                className="w-[80%] text-textMd outline-hidden"
               />
               <SignInButton>
                 <button className="bg-primary px-4 py-3 text-white rounded-md text-textSm hover:opacity-90 duration-200 hidden md:block">
@@ -179,7 +179,7 @@ function App() {
             {howItWorks.map((data, i) => (
               <div
                 key={i}
-                className="border border-gray-300 rounded-md p-4 shadow-sm transition hover:shadow-lg"
+                className="border border-gray-300 rounded-md p-4 shadow-xs transition hover:shadow-lg"
               >
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {data.title}
@@ -225,7 +225,7 @@ function App() {
               {faq.map((data, i) => (
                 <div
                   key={i}
-                  className="border border-gray-300 rounded-md p-4 shadow-sm transition hover:shadow-lg"
+                  className="border border-gray-300 rounded-md p-4 shadow-xs transition hover:shadow-lg"
                 >
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">
                     {data.title}
