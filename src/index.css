@@ -1,8 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap')
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap")
 layer(base);
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap')
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap")
 layer(base);
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+  --text--textSm: 14px;
+  --text-textMd: 16px;
+  --text-textLg: 20px;
+  --color-primary: #8e24aa;
+  --color-secondary: #e4aff8;
+  --color-bgBox: #fcf5fe;
+  --color-bgWhite: #f7f7f7f7;
+  --font-rubik: "Rubik Mono One", "serif";
+}
 
 @config '../tailwind.config.js';
 
@@ -24,7 +35,7 @@ layer(base);
 
 @layer utilities {
   body {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
   }
   @media (max-width: 476px) {
     .Toastify__toast {
