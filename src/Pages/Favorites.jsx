@@ -71,7 +71,7 @@ const Favorites = () => {
                     {dish.description}
                   </p>
                 </div>
-                <div className="p-4 border-t">
+                <div className="p-4">
                   <button
                     onClick={(e) => {
                       e.stopPropagation();

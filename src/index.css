@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap")
-layer(base);
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap")
-layer(base);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+
 @import "tailwindcss";
 
 @theme {
-  --text--textSm: 14px;
+  --text-textSm: 14px;
   --text-textMd: 16px;
   --text-textLg: 20px;
   --color-primary: #8e24aa;
@@ -13,16 +13,6 @@ layer(base);
   --color-bgBox: #fcf5fe;
   --color-bgWhite: #f7f7f7f7;
   --font-rubik: "Rubik Mono One", "serif";
-}
-
-@config '../tailwind.config.js';
-
-@utility flexBetween {
-  @apply flex justify-between items-center;
-}
-
-@utility flexCenter {
-  @apply flex items-center justify-center;
 }
 
 @utility filterContainer {
@@ -33,14 +23,21 @@ layer(base);
   align-items: flex-start;
 }
 
-@layer utilities {
-  body {
-    font-family: "Noto Sans JP", sans-serif;
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+@media (max-width: 476px) {
+  .Toastify__toast {
+    --toastify-toast-width: 70%;
+    margin: 20px auto 0;
   }
-  @media (max-width: 476px) {
-    .Toastify__toast {
-      --toastify-toast-width: 70%;
-      margin: 20px auto 0;
-    }
+}
+
+@layer utilities {
+  .flexBetween {
+    @apply flex justify-between items-center;
+  }
+  .flexCenter {
+    @apply flex items-center justify-center;
   }
 }

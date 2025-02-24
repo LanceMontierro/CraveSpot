@@ -107,7 +107,7 @@ const FilterFood = () => {
           </button>
         </div>
         {mobileFilter && (
-          <div className="fixed inset-0 z-1000 bg-black bg-opacity-50 flexCenter">
+          <div className="fixed inset-0 z-1000 flexCenter">
             {/* Modal Container */}
             <div className="bg-white pt-6 px-6 pb-8 rounded-xl w-[90%] max-w-[624px] shadow-lg relative">
               <header className="flexBetween mb-6">
