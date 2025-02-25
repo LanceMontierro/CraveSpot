@@ -48,7 +48,7 @@ const FilterFood = () => {
           <h2 className="font-bold">Filters</h2>
           {filterOptions.map((data, i) => (
             <fieldset
-              className=" overflow-hidden border-b border-colorGray700"
+              className=" overflow-hidden border-b border-b-gray-700 "
               key={i}
             >
               <div className="py-[20px]">
@@ -74,7 +74,7 @@ const FilterFood = () => {
               ))}
             </fieldset>
           ))}
-          <div className="border-t py-3 border-colorGray700"></div>
+          <div className="py-3 border-b border-t-gray-700"></div>
           <button
             className="bg-primary px-4 py-3 text-white rounded-md text-textSm hover:opacity-90 duration-200 w-full"
             onClick={resetFilterDishes}

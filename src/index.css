@@ -23,9 +23,12 @@
   align-items: flex-start;
 }
 
-body {
-  font-family: "Noto Sans JP", sans-serif;
+@layer base {
+  body {
+    font-family: "Noto Sans JP", sans-serif;
+  }
 }
+
 @media (max-width: 476px) {
   .Toastify__toast {
     --toastify-toast-width: 70%;
